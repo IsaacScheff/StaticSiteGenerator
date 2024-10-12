@@ -5,7 +5,6 @@ from htmlnode import HTMLNode
 class TestHTMLNode(unittest.TestCase):    
     def test_htmlnode_no_values(self):
         node = HTMLNode()
-        print(node)
         self.assertEqual(node.__repr__(), "HTML Node: Tag-None Value-None\nChildren-None\nProps-None")
     
     def test_htmlnode_props_to_html(self):
